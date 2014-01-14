@@ -19,6 +19,9 @@
 #
 # '@Amaroom'
 
+# update with yum
+yum -y upgrade
+
 # install Tomcat and git
 yum -y install tomcat7 git
 
@@ -30,11 +33,11 @@ mkdir /usr/share/tomcat7/lib/railo4
 
 # Download the Railo jars to a temp folder and expand. This path can be changed to any 
 # other paths as needed. 
-curl -silent http://www.getrailo.org/railo/remote/download/4.0.4.001/custom/all/railo-4.0.4.001-jars.zip -o /tmp/railo.zip
+curl -silent http://www.getrailo.org/railo/remote/download/4.1.2.005/custom/all/railo-4.1.2.005-jars.zip -o /tmp/railo.zip
 unzip /tmp/railo.zip -d /tmp/railo4
 
 # Place the jars in our new tomcat lib sub-folder.
-mv -t /usr/share/tomcat7/lib/railo4/ /tmp/railo4/railo-4.0.4.001-jars/*
+mv -t /usr/share/tomcat7/lib/railo4/ /tmp/railo4/railo-4.1.2.005-jars/*
 chown -R tomcat.tomcat /usr/share/tomcat7/lib/railo4/
 
 # For tomcat to find the Jars, we need to include their path in the common loader path.
