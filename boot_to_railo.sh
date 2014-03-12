@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This boot script will install Railo 4.0.4 in a server configuration on an Amazon
+# This boot script will install Railo 4.1.2 in a server configuration on an Amazon
 # EC2 Amazon Linux instance. To use this script, start your preferred method of 
 # launching a new Amazon Linux instance. Make sure to add this line to the 
 # "User Data" section of your command or launch screen.
